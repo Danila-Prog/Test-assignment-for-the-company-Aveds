@@ -1,0 +1,1 @@
+export const checkingEntry = localStorage.length > 1;

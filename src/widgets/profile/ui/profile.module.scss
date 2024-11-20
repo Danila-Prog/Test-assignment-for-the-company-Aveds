@@ -1,0 +1,82 @@
+.mainProfile {
+    width: 727px;
+    height: 158px;
+    margin: 0 auto;
+    margin-top: 141px;
+
+    h1 {
+        margin-bottom: 35px;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 80px;
+        color: rgba(37, 43, 66, 1);
+    }
+
+    button {
+        width: 228px;
+        height: 52px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .exitButton {
+        background: rgba(255, 104, 91, 1);
+        color: white;
+        margin-right: 10px;
+    }
+
+    .goContactsButton {
+        border: 1px solid rgba(255, 104, 91, 1);
+        color: rgba(255, 104, 91, 1);
+    }
+}
+
+@media screen and (max-width: 831px) {
+    .mainProfile {
+        width: 527px;
+        margin-top: 141px;
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 53px;
+            line-height: 70px;
+        }
+        button {
+            width: 200px;
+            height: 52px;
+        }
+    }
+}
+@media screen and (max-width: 577px) {
+    .mainProfile {
+        width: 427px;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 45px;
+            line-height: 65px;
+        }
+        button {
+            width: 155px;
+            height: 45px;
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (max-width: 476px) {
+    .mainProfile {
+        width: 350px;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
+            line-height: 50px;
+        }
+        button {
+            width: 145px;
+            font-size: 12px;
+        }
+    }
+}

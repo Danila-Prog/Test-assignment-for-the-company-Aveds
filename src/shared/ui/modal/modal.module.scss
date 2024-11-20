@@ -1,0 +1,42 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modalWrapper {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.modalContent{
+    position: relative;
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    .modalContent{
+        width: 450px;
+        height: 400px;
+    }
+}
+@media screen and (max-width: 601px) {
+    .modalContent{
+        width: 340px;
+        height: 350px;
+    }
+}

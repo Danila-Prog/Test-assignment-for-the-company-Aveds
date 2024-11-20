@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# Project Name
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Тестовое задание на стажировку в компанию Aveds
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Этот проект организован таким образом, чтобы облегчить навигацию и понимание его компонентов. Ниже приведено подробное описание структуры каталогов и назначения каждой папки.
 
-## Expanding the ESLint configuration
+## Directory Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **public**: Содержит статические файлы, такие как значки SVG. Это ресурсы, которые предоставляются непосредственно клиенту.
 
-- Configure the top-level `parserOptions` property like this:
+- **app**: Эта папка включает в себя:
+  - **authentication**: Управляет логикой аутентификации.
+  - **routing**: Управляет маршрутизацией приложения.
+  - **global styles**: Содержит глобальные файлы CSS или стилей.
+  - **root component**: Основной компонент точки входа в приложение.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **features**: Содержит функции, связанные с управлением учетными записями пользователей, такие как функции входа и выхода из системы.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **pages**: Здесь расположены все страницы приложения.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **shared**:
+  - **ui**: Содержит визуальную состовляющую переиспользуемых компонентов.
+  - **types**: Содержит типы TypeScript, относящиеся к компонентам пользовательского интерфейса.
+  - **utils**: Вспомогательные утилиты для компонентов.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **widgets**: Эта папка содержит компоненты, из которой состоит страница
+  - **ui**: Визуальные аспекты компонентов.
+  - **model**: (Если присутствует) Содержит логику для компонентов.
+
+## Installation
+
+Инструкция, как локально установить проект на пк:
+
+```bash
+#Открываем консоль и заходим в папку, куда хотим поместить наш проект
+cd yourPath
+
+# Клонируем репозиторий с GigHub
+git clone https://github.com/Danila-Prog/Test-assignment-for-the-company-Aveds.git
+
+# Устанавливаем зависимости
+npm install
+
+# Запустить локально
+npm run dev
+
+# Забилдить для production
+npm run build
+
+

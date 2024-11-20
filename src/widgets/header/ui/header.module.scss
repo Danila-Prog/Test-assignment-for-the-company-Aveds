@@ -1,0 +1,83 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 70px;
+    padding-left: 71px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+
+    .clickInfo {
+        a {
+            margin-right: 49px;
+            font-size: 15px;
+            font-weight: 600;
+            color: rgba(115, 115, 115, 1);
+
+        }
+
+        .buttonExited {
+            width: 186px;
+            height: 40px;
+            border: 2px solid rgba(255, 104, 91, 1);
+            border-radius: 7px;
+            font-size: 20px;
+            font-weight: 500;
+            color: rgba(255, 104, 91, 1);
+            cursor: pointer;
+        }
+    }
+}
+@media screen and (max-width: 1001px) {
+    .header {
+        padding-right: 50px;
+        padding-left: 50px;
+
+        .clickInfo {
+            a {
+                margin-right: 30px;
+            }
+
+            .buttonExited {
+                width: 166px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 621px) {
+    .header {
+        padding-right: 30px;
+        padding-left: 30px;
+
+        .clickInfo {
+            a {
+                margin-right: 20px;
+            }
+
+            .buttonExited {
+                width: 145px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .header {
+        padding-right: 10px;
+        padding-left: 10px;
+
+        .clickInfo {
+            a {
+                margin-right: 10px;
+            }
+
+            .buttonExited {
+                width: 106px;
+                height: 36px;
+            }
+        }
+    }
+}

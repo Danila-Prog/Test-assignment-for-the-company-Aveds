@@ -1,0 +1,83 @@
+.main{
+    margin-top: 96.5px;
+    h1{
+        width: 727px;
+        margin-bottom: 35px;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 80px;
+        color: rgba(37, 43, 66, 1);
+    }
+    .buttonEnter{
+        width: 128px;
+        height: 52px;
+        margin-right: 10px;
+        background: rgba(255, 104, 91, 1);
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        cursor: pointer;
+    }
+    .buttonContacts{
+        width: 155px;
+        height: 52px;
+        color: rgba(255, 104, 91, 1);
+        border: 1px solid rgba(255, 104, 91, 1);
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1001px) {
+    .main{
+        h1{
+            width: 600px;
+            font-size: 48px;
+            line-height: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        h1{
+            width: 560px;
+            font-size: 45px;
+            line-height: 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 621px) {
+    .main{
+        h1{
+            width: 500px;
+            font-size: 40px;
+            line-height: 55px;
+        }
+    }
+}
+
+@media screen and (max-width: 546px) {
+    .main{
+        h1{
+            width: 420px;
+            font-size: 34px;
+            line-height: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .main{
+        margin-top: 55.5px;
+        h1{
+            width: 355px;
+            font-size: 28px;
+            line-height: 39px;
+        }
+    }
+}

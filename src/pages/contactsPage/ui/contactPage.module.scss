@@ -1,0 +1,24 @@
+.contactsPage{
+    position: relative;
+    width: 1045px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 80px;
+    h1{
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        font-size: 58px;
+        font-weight: 700;
+        color: rgba(37, 43, 66, 1);
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .contactsPage {
+        width: 78%;
+        h1{
+            font-size: 55px;
+        }
+    }
+}
